@@ -6,6 +6,7 @@ extern crate diesel;
 
 use rocket_sync_db_pools::database;
 
+mod auth;
 mod cors;
 mod errors;
 mod schema;
@@ -30,6 +31,7 @@ fn rocket() -> _ {
             ],
         )
         .mount("/", routes![])
+        .mount("/auth", routes![auth::login, auth::logout])
         .mount(
             "/users",
             routes![
