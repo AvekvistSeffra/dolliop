@@ -9,6 +9,7 @@ use rocket_sync_db_pools::database;
 mod auth;
 mod cors;
 mod errors;
+mod items;
 mod schema;
 mod users;
 mod util;
@@ -40,6 +41,16 @@ fn rocket() -> _ {
                 users::read,
                 users::update,
                 users::delete
+            ],
+        )
+        .mount(
+            "/items",
+            routes![
+                items::create,
+                items::list,
+                items::read,
+                items::update,
+                items::delete
             ],
         )
 }
