@@ -1,0 +1,2 @@
+[global.databases]
+dollop = { url = "mysql://dollop:dollop@localhost:3306/dollop" }
