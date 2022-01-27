@@ -8,6 +8,7 @@ use rocket_sync_db_pools::database;
 
 mod cors;
 mod errors;
+mod schema;
 #[database("dollop")]
 pub struct DollopDbConnection(diesel::MysqlConnection);
 
