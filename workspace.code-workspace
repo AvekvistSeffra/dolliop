@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "backend"
+		},
+		{
+			"path": "frontend"
+		}
+	],
+	"settings": {},
+	"extensions": {
+		"recommendations": [
+			"rangav.vscode-thunder-client",
+			"cweijan.vscode-mysql-client2",
+			"nyxiative.rust-and-friends",
+			"octref.vetur",
+		]
+	}
+}
