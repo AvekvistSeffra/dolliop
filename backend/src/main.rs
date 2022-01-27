@@ -8,6 +8,7 @@ use rocket_sync_db_pools::database;
 
 mod auth;
 mod cors;
+mod entries;
 mod errors;
 mod items;
 mod schema;
