@@ -11,6 +11,7 @@ mod cors;
 mod entries;
 mod errors;
 mod items;
+mod lists;
 mod schema;
 mod users;
 mod util;
