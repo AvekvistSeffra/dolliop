@@ -1,0 +1,43 @@
+{
+    "database.connections": {
+        "1643237718189": {
+            "host": "localhost",
+            "dbPath": "",
+            "port": "3306",
+            "user": "dollop",
+            "authType": "default",
+            "password": "dollop",
+            "encoding": "utf8",
+            "clientKeyPath": null,
+            "clientCertPath": null,
+            "caPath": null,
+            "database": "dollop",
+            "useSSL": false,
+            "usingSSH": false,
+            "showHidden": false,
+            "includeDatabases": null,
+            "dbType": "MySQL",
+            "encrypt": true,
+            "isCluster": false,
+            "connectionUrl": "",
+            "srv": false,
+            "esAuth": "none",
+            "global": false,
+            "key": "1643237718189",
+            "timezone": "+00:00",
+            "ssh": {
+                "host": "",
+                "privateKeyPath": "/home/node/.ssh/id_rsa",
+                "port": 22,
+                "username": "root",
+                "type": "password",
+                "connectTimeout": 10000,
+                "algorithms": {
+                    "cipher": []
+                }
+            },
+            "name": "Dollop",
+            "connectionKey": "database.connections"
+        }
+    }
+}
