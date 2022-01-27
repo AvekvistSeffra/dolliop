@@ -9,6 +9,9 @@ use rocket_sync_db_pools::database;
 mod cors;
 mod errors;
 mod schema;
+mod users;
+mod util;
+
 #[database("dollop")]
 pub struct DollopDbConnection(diesel::MysqlConnection);
 
@@ -27,4 +30,14 @@ fn rocket() -> _ {
             ],
         )
         .mount("/", routes![])
+        .mount(
+            "/users",
+            routes![
+                users::create,
+                users::list,
+                users::read,
+                users::update,
+                users::delete
+            ],
+        )
 }
